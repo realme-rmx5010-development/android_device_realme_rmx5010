@@ -94,5 +94,8 @@ TARGET_USERIMAGES_USE_F2FS                  := true
 # Sepolicy
 -include device/qcom/sepolicy_vndr/SEPolicy.mk
 
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.device.xml
+
 # Inherit from the proprietary version
 -include vendor/realme/rmx5010/BoardConfigVendor.mk
