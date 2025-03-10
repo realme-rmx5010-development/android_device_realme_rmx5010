@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 # Call the proprietary setup.
 $(call inherit-product, vendor/realme/rmx5010/rmx5010-vendor.mk)
 
