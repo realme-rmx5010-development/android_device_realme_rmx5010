@@ -36,6 +36,11 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Fastboot
+PRODUCT_PACKAGES += \
+    fastbootd \
+    android.hardware.fastboot-service.example_recovery
+
 # Mount point
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
