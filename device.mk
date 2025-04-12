@@ -58,7 +58,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    fstab.qcom.vendor_ramdisk
+    fstab.qcom.vendor_ramdisk \
+    init.recovery.qcom.rc
 
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL    := 202404

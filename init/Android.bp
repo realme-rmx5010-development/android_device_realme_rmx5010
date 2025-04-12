@@ -9,3 +9,10 @@ prebuilt_etc {
     vendor: true,
     vendor_ramdisk_available: true,
 }
+
+prebuilt_etc {
+    name: "init.recovery.qcom.rc",
+    relative_install_path: "init",
+    src: "etc/init/init.recovery.qcom.rc",
+    recovery: true,
+}
