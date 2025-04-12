@@ -98,6 +98,10 @@ TARGET_USERIMAGES_USE_F2FS                  := true
 -include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 # VINTF
+DEVICE_MANIFEST_SKUS := sun
+DEVICE_MANIFEST_SUN_FILES := \
+    $(DEVICE_PATH)/configs/vintf/manifest_sun.xml
+
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/compatibility_matrix.device.xml \
     vendor/lineage/config/device_framework_matrix.xml
