@@ -91,5 +91,8 @@ TARGET_RECOVERY_PIXEL_FORMAT                := RGBX_8888
 TARGET_RECOVERY_FSTAB                       := $(DEVICE_PATH)/init/etc/fstab.qcom
 TARGET_USERIMAGES_USE_F2FS                  := true
 
+# Sepolicy
+-include device/qcom/sepolicy_vndr/SEPolicy.mk
+
 # Inherit from the proprietary version
 -include vendor/realme/rmx5010/BoardConfigVendor.mk
