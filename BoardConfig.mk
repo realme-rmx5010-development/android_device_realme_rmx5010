@@ -35,6 +35,9 @@ TARGET_BOOTLOADER_BOARD_NAME    := sun
 # Display
 TARGET_SCREEN_DENSITY := 480
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
+
 # Kernel
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
