@@ -88,6 +88,10 @@ $(foreach p, $(BOARD_PARTITION_LIST), $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE :=
 BOARD_USES_QCOM_HARDWARE    := true
 TARGET_BOARD_PLATFORM       := sun
 
+# Properties
+TARGET_PROP_PARTITION_LIST := $(filter-out %_dlkm,$(BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST))
+$(foreach p, $(TARGET_PROP_PARTITION_LIST), $(eval TARGET_$(p)_PROP += $(DEVICE_PATH)/configs/properties/$(call to-lower, $(p)).prop))
+
 # Recovery
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE    := true
 TARGET_RECOVERY_PIXEL_FORMAT                := RGBX_8888
